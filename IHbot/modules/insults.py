@@ -67,6 +67,11 @@ SFW_STRINGS = (
     "Try to spend one day in a coffin and it will be yours forever.",
     "Hit Uranium with a slow moving neutron in your presence. It will be a worthwhile experience.",
     "You can be the first person to step on sun. Have a try.",
+    "People like you are the reason we have middle fingers.",
+    "When your mom dropped you off at the school, she got a ticket for littering.",
+    "You’re so ugly that when you cry, the tears roll down the back of your head…just to avoid your face.",
+    "If you’re talking behind my back then you’re in a perfect position to kiss my a**!.",
+    "Stupidity is not a crime so you are free to go.",
 )
 
 @run_async
