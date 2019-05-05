@@ -35,7 +35,7 @@ def check_flood(bot: Bot, update: Update) -> str:
 
     try:
         chat.kick_member(user.id)
-        msg.reply_text("I like to leave the flooding to natural disasters. But you, you were just a "
+        msg.reply_text("I did not ask for your trust. I demand only your obedience.But you, you were just a "
                        "disappointment. Get out.")
 
         return "<b>{}:</b>" \
