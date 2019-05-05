@@ -21,20 +21,20 @@ from IHbot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hello {}, my name is {}!
 
-I'm a group manager bot maintained by [this wonderful person](tg://user?id={}). I'm built in python3, using the \
+I'm a world group manager bot maintained by [this awesome person](tg://user?id={}). I'm built in python3, using the \
 python-telegram-bot library \
 
 
 You can find the list of available commands with /help.
 
-[Click here to add me in your groups](https://telegram.me/TheThuggBot?startgroup=add)
+[Click here to add me in your groups and Enjoy the World 😎](https://telegram.me/TheThuggBot?startgroup=add)
 
-Free Hai Bro!
+Earth. That is my price.!
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extra commands ! Have a look at the following for an idea of some of \
+I'm a modular world group management bot with a lot of fun extra commands ! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -51,7 +51,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-But It is Totally Free !!"""
+Earth. That is my price.!!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
