@@ -103,7 +103,7 @@ def button(bot: Bot, update: Update) -> str:
         user_id = match.group(1)
         chat = update.effective_chat  # type: Optional[Chat]
         if not is_user_admin(chat, int(user.id)):
-            query.answer(text="You are not authorized to remove this warn! Only administrators may remove warns.", show_alert=True)
+            query.answer(text="Who the fuck are you? You are not authorized to remove this warn! Only administrators may remove warns.", show_alert=True)
             return ""
         res = sql.remove_warn(user_id, chat.id)
         if res:
@@ -143,7 +143,7 @@ def warn_user(bot: Bot, update: Update, args: List[str]) -> str:
         else:
             return warn(chat.get_member(user_id).user, chat, reason, message, warner)
     else:
-        message.reply_text("No user was designated!")
+        message.reply_text("No person was designated!")
     return ""
 
 
@@ -170,7 +170,7 @@ def reset_warns(bot: Bot, update: Update, args: List[str]) -> str:
                                                             mention_html(warned.id, warned.first_name),
                                                             warned.id)
     else:
-        message.reply_text("No user has been designated!")
+        message.reply_text("No person has been designated!")
     return ""
 
 
@@ -197,7 +197,7 @@ def warns(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 "User has {}/{} warnings, but no reasons for any of them.".format(num_warns, limit))
     else:
-        update.effective_message.reply_text("This user hasn't got any warnings!")
+        update.effective_message.reply_text("This person hasn't got any warnings!")
 
 
 # Dispatcher handler stop - do not async
