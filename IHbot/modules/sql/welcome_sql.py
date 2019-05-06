@@ -5,8 +5,8 @@ from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, BigInteger
 from IHbot.modules.helper_funcs.msg_types import Types
 from IHbot.modules.sql import SESSION, BASE
 
-DEFAULT_WELCOME = "Hey {first}, how are you?"
-DEFAULT_GOODBYE = "Chal Foot Idhar Se"
+DEFAULT_WELCOME = "{first}, Welcome son. How are you?"
+DEFAULT_GOODBYE = "Destiny kicked your sad ass"
 
 
 class Welcome(BASE):
