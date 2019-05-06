@@ -21,8 +21,8 @@ from IHbot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hello {}, my name is {}!
 
-I'm a world group manager bot maintained by [this awesome person](tg://user?id={}). I'm built in python3, using the \
-python-telegram-bot library \
+I'm a world group manager bot maintained by [this awesome person](tg://user?id={}). I know what it’s like to lose. To feel so desperately that you’re right, yet to fail nonetheless. Dread it. Run from it. \
+Destiny still arrives. Or should I say, I have.\
 
 
 You can find the list of available commands with /help.
@@ -149,7 +149,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("Zinda Hu Abhi :p ")
+        update.effective_message.reply_text("The end is near.🙃 ")
 
 
 # for test purposes
