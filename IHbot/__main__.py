@@ -21,20 +21,22 @@ from IHbot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hello {}, my name is {}!
 
-I'm a world group manager bot maintained by [this awesome person](tg://user?id={}). I know what it’s like to lose. To feel so desperately that you’re right, yet to fail nonetheless. Dread it. Run from it. \
+I know what it’s like to lose. To feel so desperately that you’re right, yet to fail nonetheless. Dread it. Run from it. \
 Destiny still arrives. Or should I say, I have.\
 
 
+I'm world manager bot maintained by [this awesome person](tg://user?id={}).
+
 You can find the list of available commands with /help.
 
-[Click here to add me in your groups and Enjoy the World 😎](https://telegram.me/TheThuggBot?startgroup=add)
+[Click here to add me in your groups and Enjoy the World 😎](https://telegram.me/ThaNos_TheBot?startgroup=add)
 
 Earth. That is my price.!
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular world group management bot with a lot of fun extra commands ! Have a look at the following for an idea of some of \
+I'm a modular world group management bot with a lot of fun and serious commands ! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -149,7 +151,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("The end is near.🙃 ")
+        update.effective_message.reply_text("The end is near.🙂 ")
 
 
 # for test purposes
