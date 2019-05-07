@@ -6,7 +6,7 @@ from IHbot.modules.sql import SESSION, BASE
 
 
 class UserInfo(BASE):
-    __tablename__ = "userinfo"
+    __tablename__ = "Destiny"
     user_id = Column(Integer, primary_key=True)
     info = Column(UnicodeText)
 
