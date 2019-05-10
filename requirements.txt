@@ -10,4 +10,3 @@ pyowm
 spongemock
 geopy
 PyLyrics
-zalgo-text
